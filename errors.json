@@ -1,0 +1,392 @@
+{
+    "0": {
+        "annotation": {
+            "attrs": {
+                "category": "Nodularis, egyenetlen kont\u00far\u00fa k\u00e9plet",
+                "height": 377,
+                "name": "shape",
+                "stroke": "#808000",
+                "strokeWidth": 10.486301369863,
+                "width": 340,
+                "y": 718
+            },
+            "className": "Rect"
+        },
+        "id": "0qCWJDAIvkV1WE8NLqmVuw_2017-10-11"
+    },
+    "1": {
+        "annotation": {
+            "attrs": {
+                "category": "K\u00f3ros axillaris nyirokcsom\u00f3",
+                "height": 325,
+                "name": "shape",
+                "stroke": "#cc9900",
+                "strokeWidth": 10.486301369863,
+                "width": 183,
+                "y": 351
+            },
+            "className": "Rect"
+        },
+        "id": "13JlNiiNydQNF2X78QCx3Q_2017-09-15"
+    },
+    "2": {
+        "annotation": {
+            "attrs": {
+                "category": "K\u00f3ros axillaris nyirokcsom\u00f3",
+                "height": 333,
+                "name": "shape",
+                "stroke": "#cc9900",
+                "strokeWidth": 16.232876712329,
+                "width": 365,
+                "y": 486
+            },
+            "className": "Rect"
+        },
+        "id": "16003505760742_2020-09-17"
+    },
+    "3": {
+        "annotation": {
+            "attrs": {
+                "category": "Spikul\u00e1lt (stellate)",
+                "height": 405,
+                "name": "shape",
+                "stroke": "#0000ff",
+                "strokeWidth": 16.205128205128,
+                "width": 178,
+                "y": 3370
+            },
+            "className": "Rect"
+        },
+        "id": "4mq_2019-11-11"
+    },
+    "4": {
+        "annotation": {
+            "attrs": {
+                "category": "Nodularis, egyenetlen kont\u00far\u00fa k\u00e9plet",
+                "height": 371,
+                "name": "shape",
+                "stroke": "#808000",
+                "strokeWidth": 10.454148471616,
+                "width": 339,
+                "y": 841
+            },
+            "className": "Rect"
+        },
+        "id": "5ipgby5AZUFPya5H7OMrMQ_2015-06-10"
+    },
+    "5": {
+        "annotation": {
+            "attrs": {
+                "category": "K\u00f3ros axillaris nyirokcsom\u00f3",
+                "height": 329,
+                "name": "shape",
+                "stroke": "#cc9900",
+                "strokeWidth": 10.454148471616,
+                "width": 182,
+                "y": 376
+            },
+            "className": "Rect"
+        },
+        "id": "5ipgby5AZUFPya5H7OMrMQ_2015-06-10"
+    },
+    "6": {
+        "annotation": {
+            "attrs": {
+                "category": "Spikul\u00e1lt (stellate)",
+                "name": "shape",
+                "stroke": "#0000ff",
+                "strokeWidth": 10.454148471616,
+                "width": 26,
+                "x": 841,
+                "y": 1421
+            },
+            "className": "Rect"
+        },
+        "id": "FeXSl8UwMegLierwVZX1CQ_2014-12-17"
+    },
+    "7": {
+        "annotation": {
+            "attrs": {
+                "category": "Egy\u00e9b",
+                "name": "shape",
+                "stroke": "#996633",
+                "strokeWidth": 20.301369863014,
+                "width": 20,
+                "x": 2253,
+                "y": 2588
+            },
+            "className": "Rect"
+        },
+        "id": "Licence_18_2019-11-08"
+    },
+    "8": {
+        "annotation": {
+            "attrs": {
+                "category": "Egy\u00e9b",
+                "height": 8,
+                "name": "shape",
+                "stroke": "#996633",
+                "strokeWidth": 16.205128205128,
+                "x": 826,
+                "y": 2503
+            },
+            "className": "Rect"
+        },
+        "id": "Licence_8_2019-11-11"
+    },
+    "9": {
+        "annotation": {
+            "attrs": {
+                "category": "K\u00f3ros axillaris nyirokcsom\u00f3",
+                "height": 324,
+                "name": "shape",
+                "stroke": "#cc9900",
+                "strokeWidth": 10.454148471616,
+                "width": 219,
+                "y": 543
+            },
+            "className": "Rect"
+        },
+        "id": "N6Rke8E5OBrH69PlLP21w_2015-06-12"
+    },
+    "10": {
+        "annotation": {
+            "attrs": {
+                "category": "Egy\u00e9b",
+                "name": "shape",
+                "stroke": "#996633",
+                "strokeWidth": 18.516239316239,
+                "width": 9,
+                "x": 3073,
+                "y": 3555
+            },
+            "className": "Rect"
+        },
+        "id": "NyH2_2016-03-17"
+    },
+    "11": {
+        "annotation": {
+            "attrs": {
+                "category": "Spikul\u00e1lt (stellate)",
+                "height": 168,
+                "name": "shape",
+                "stroke": "#0000ff",
+                "strokeWidth": 10.468376068376,
+                "width": 94,
+                "y": 1046
+            },
+            "className": "Rect"
+        },
+        "id": "NyH_2014-01-07"
+    },
+    "12": {
+        "annotation": {
+            "attrs": {
+                "category": "Egy\u00e9b",
+                "height": 11,
+                "name": "shape",
+                "stroke": "#996633",
+                "strokeWidth": 10.468376068376,
+                "x": 62,
+                "y": 1491
+            },
+            "className": "Rect"
+        },
+        "id": "NyH_2014-01-08"
+    },
+    "13": {
+        "annotation": {
+            "attrs": {
+                "category": "Egy\u00e9b",
+                "height": 5,
+                "name": "shape",
+                "stroke": "#996633",
+                "strokeWidth": 10.468376068376,
+                "x": 188,
+                "y": 1570
+            },
+            "className": "Rect"
+        },
+        "id": "NyH_2014-01-08"
+    },
+    "14": {
+        "annotation": {
+            "attrs": {
+                "category": "K\u00f3ros axillaris nyirokcsom\u00f3",
+                "height": 167,
+                "name": "shape",
+                "stroke": "#cc9900",
+                "strokeWidth": 10.468376068376,
+                "x": 2286,
+                "y": 345
+            },
+            "className": "Rect"
+        },
+        "id": "NyH_2014-02-27"
+    },
+    "15": {
+        "annotation": {
+            "attrs": {
+                "category": "K\u00f3ros axillaris nyirokcsom\u00f3",
+                "height": 273,
+                "name": "shape",
+                "stroke": "#cc9900",
+                "strokeWidth": 10.486301369863,
+                "width": 330,
+                "y": 597
+            },
+            "className": "Rect"
+        },
+        "id": "PYb38BcJSEIEnKnZFFtEZg_2015-12-17"
+    },
+    "16": {
+        "annotation": {
+            "attrs": {
+                "category": "Nodularis, egyenetlen kont\u00far\u00fa k\u00e9plet",
+                "height": 210,
+                "name": "shape",
+                "stroke": "#808000",
+                "strokeWidth": 10.486301369863,
+                "width": 146,
+                "y": 1719
+            },
+            "className": "Rect"
+        },
+        "id": "Qj8WSKXhivcQ5XfbLfjb6w_2017-11-09"
+    },
+    "17": {
+        "annotation": {
+            "attrs": {
+                "category": "Egy\u00e9b",
+                "height": 21,
+                "name": "shape",
+                "stroke": "#996633",
+                "strokeWidth": 20.266666666667,
+                "x": 2016,
+                "y": 3100
+            },
+            "className": "Rect"
+        },
+        "id": "SE_29u_2019-11-08"
+    },
+    "18": {
+        "annotation": {
+            "attrs": {
+                "category": "K\u00f3ros axillaris nyirokcsom\u00f3",
+                "height": 551,
+                "name": "shape",
+                "stroke": "#cc9900",
+                "strokeWidth": 10.486301369863,
+                "width": 293,
+                "y": 361
+            },
+            "className": "Rect"
+        },
+        "id": "SYGt3kaxSI48NANBviCqbQ_2015-10-27"
+    },
+    "19": {
+        "annotation": {
+            "attrs": {
+                "category": "Nodularis, egyenetlen kont\u00far\u00fa k\u00e9plet",
+                "height": 283,
+                "name": "shape",
+                "stroke": "#808000",
+                "strokeWidth": 10.486301369863,
+                "width": 193,
+                "y": 1179
+            },
+            "className": "Rect"
+        },
+        "id": "SzKBlu9p6M90O5MT3NXag_2015-10-29"
+    },
+    "20": {
+        "annotation": {
+            "attrs": {
+                "category": "Egy\u00e9b",
+                "name": "shape",
+                "stroke": "#996633",
+                "strokeWidth": 10.454148471616,
+                "width": 5,
+                "x": 15,
+                "y": 1604
+            },
+            "className": "Rect"
+        },
+        "id": "aOzMfhDPN2ML7qCUIZrVpA_2016-03-24"
+    },
+    "21": {
+        "annotation": {
+            "attrs": {
+                "category": "K\u00f3ros axillaris nyirokcsom\u00f3",
+                "height": 367,
+                "name": "shape",
+                "stroke": "#cc9900",
+                "strokeWidth": 10.486301369863,
+                "width": 335,
+                "y": 36
+            },
+            "className": "Rect"
+        },
+        "id": "bCmVUVI0oTaoYMnikwLeYw_2017-11-17"
+    },
+    "22": {
+        "annotation": {
+            "attrs": {
+                "category": "Spikul\u00e1lt (stellate)",
+                "height": 445,
+                "name": "shape",
+                "stroke": "#0000ff",
+                "strokeWidth": 10.486301369863,
+                "width": 204,
+                "y": 330
+            },
+            "className": "Rect"
+        },
+        "id": "c9SWAfXeTEb4j8reT9mbGA_2015-10-27"
+    },
+    "23": {
+        "annotation": {
+            "attrs": {
+                "category": "Nodularis, egyenetlen kont\u00far\u00fa k\u00e9plet",
+                "height": 630,
+                "name": "shape",
+                "stroke": "#808000",
+                "strokeWidth": 10.486301369863,
+                "width": 235,
+                "y": 686
+            },
+            "className": "Rect"
+        },
+        "id": "iIuDSwzFvOvzBPJNu8IUIg_2017-12-14"
+    },
+    "24": {
+        "annotation": {
+            "attrs": {
+                "category": "Spikul\u00e1lt (stellate)",
+                "height": 74,
+                "name": "shape",
+                "stroke": "#0000ff",
+                "strokeWidth": 10.486301369863,
+                "width": 587,
+                "y": 880
+            },
+            "className": "Rect"
+        },
+        "id": "iIuDSwzFvOvzBPJNu8IUIg_2017-12-14"
+    },
+    "25": {
+        "annotation": {
+            "attrs": {
+                "category": "Lobul\u00e1lt sz\u00e9l",
+                "height": 493,
+                "name": "shape",
+                "stroke": "#ff0000",
+                "strokeWidth": 10.486301369863,
+                "width": 309,
+                "y": 1017
+            },
+            "className": "Rect"
+        },
+        "id": "nUiQtbj9HaYE3zYCWPxSQ_2018-01-23"
+    }
+}
