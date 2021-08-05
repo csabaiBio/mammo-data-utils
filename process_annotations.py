@@ -16,7 +16,7 @@ for _id_, record in data.items():
         for rect in ann.get('children', []):
             if rect['attrs'].get('id') is None:
                 continue
-            slice_id = int(rect['attrs']['id'].replace('slice-', '').split('_')[0])
+            slice_id = rect['attrs']['id'].replace('slice-', '').split('_')[0]
             annotations[_id_][slice_id] =  []
 
 error_ind = 0
@@ -27,13 +27,12 @@ errors = {}
 for _id_, record in data.items():
     with open(record['annotations'], 'r') as fp:
         records = json.load(fp)
-    from pprint import pprint
     if records is not None:
         ann = records.get('drawings', {})
         for rect in ann.get('children', []):
             if rect['attrs'].get('id') is None:
                 continue
-            slice_id = int(rect['attrs']['id'].replace('slice-', '').split('_')[0])
+            slice_id = rect['attrs']['id'].replace('slice-', '').split('_')[0]
             for bbox in rect.get('children', []):
                 for bbox in bbox.get('children', []):
                     if bbox['className'] == 'Rect':
@@ -45,8 +44,15 @@ for _id_, record in data.items():
 
                             label = bbox['attrs']['category']
 
+                            image_path = list(filter(lambda x : x.split('_')[-1].replace('.dcm', '') == slice_id, record["images"]))
+
+                            if len(image_path) == 0:
+                                image_path = record["images"]
+
+                            assert len(image_path) == 1, 'Error, should match single image'
+
                             annotations[_id_][slice_id].append({
-                                'x': x, 'y':y, 'width':width, 'height': height, 'category': label
+                                'x': x, 'y':y, 'width':width, 'height': height, 'category': label, 'image_path': image_path[0]
                             })
 
                             n_annotations += 1
@@ -60,5 +66,5 @@ for _id_, record in data.items():
 with open('errors.json', 'w') as efp:
     json.dump(errors, efp, indent=4, sort_keys=True)
 
-print(n_annotations)
-print(error_ind)
+with open('annotations.json', 'w') as afp:
+    json.dump(annotations, afp, indent=4, sort_keys=True)
