@@ -34,11 +34,11 @@ for ind, img in enumerate(datastore['images']):
         draw.rectangle(((bbox[0], bbox[1]), (bbox[0] + bbox[2], bbox[1] + bbox[3])), outline=255)
         draw.text((bbox[0], bbox[1]), cat, font=fnt, fill=(255), stroke_width=1)
 
-    source_img.save('./validation_pictures/%s' % img['path'].split('/')[-1], "PNG")
+    source_img.save('./validation_pictures/%s' % f'{ind:03d}_' + img['path'].split('/')[-1], "PNG")
 
     del draw
     del source_img
 
-    if (ind + 1) % 50 == 0:
+    if (ind + 1) % 150 == 0:
         print("%d images are processed." % (ind + 1))
         break
