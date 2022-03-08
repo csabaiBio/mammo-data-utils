@@ -25,6 +25,8 @@ n_annotations = 0
 errors = {}
 
 for _id_, record in data.items():
+    if len(record["images"]) == 0:
+        continue
     with open(record['annotations'], 'r') as fp:
         records = json.load(fp)
     if records is not None:

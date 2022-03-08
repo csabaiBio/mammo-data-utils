@@ -20,6 +20,20 @@
                 "category": "Egy\u00e9b",
                 "name": "shape",
                 "stroke": "#996633",
+                "strokeWidth": 10.454148471616,
+                "x": 57,
+                "y": 2299
+            },
+            "className": "Rect"
+        },
+        "id": "IGj80vG65vUDLvara7fmxg_2014-03-28"
+    },
+    "2": {
+        "annotation": {
+            "attrs": {
+                "category": "Egy\u00e9b",
+                "name": "shape",
+                "stroke": "#996633",
                 "strokeWidth": 20.301369863014,
                 "width": 20,
                 "x": 2253,
@@ -28,21 +42,6 @@
             "className": "Rect"
         },
         "id": "Licence_18_2019-11-08"
-    },
-    "2": {
-        "annotation": {
-            "attrs": {
-                "category": "Egy\u00e9b",
-                "height": 8,
-                "name": "shape",
-                "stroke": "#996633",
-                "strokeWidth": 16.205128205128,
-                "x": 826,
-                "y": 2503
-            },
-            "className": "Rect"
-        },
-        "id": "Licence_8_2019-11-11"
     },
     "3": {
         "annotation": {
@@ -63,51 +62,6 @@
         "annotation": {
             "attrs": {
                 "category": "Egy\u00e9b",
-                "height": 11,
-                "name": "shape",
-                "stroke": "#996633",
-                "strokeWidth": 10.468376068376,
-                "x": 62,
-                "y": 1491
-            },
-            "className": "Rect"
-        },
-        "id": "NyH_2014-01-08"
-    },
-    "5": {
-        "annotation": {
-            "attrs": {
-                "category": "Egy\u00e9b",
-                "height": 5,
-                "name": "shape",
-                "stroke": "#996633",
-                "strokeWidth": 10.468376068376,
-                "x": 188,
-                "y": 1570
-            },
-            "className": "Rect"
-        },
-        "id": "NyH_2014-01-08"
-    },
-    "6": {
-        "annotation": {
-            "attrs": {
-                "category": "K\u00f3ros axillaris nyirokcsom\u00f3",
-                "height": 167,
-                "name": "shape",
-                "stroke": "#cc9900",
-                "strokeWidth": 10.468376068376,
-                "x": 2286,
-                "y": 345
-            },
-            "className": "Rect"
-        },
-        "id": "NyH_2014-02-27"
-    },
-    "7": {
-        "annotation": {
-            "attrs": {
-                "category": "Egy\u00e9b",
                 "height": 21,
                 "name": "shape",
                 "stroke": "#996633",
@@ -119,7 +73,7 @@
         },
         "id": "SE_29u_2019-11-08"
     },
-    "8": {
+    "5": {
         "annotation": {
             "attrs": {
                 "category": "Egy\u00e9b",
@@ -134,7 +88,7 @@
         },
         "id": "aOzMfhDPN2ML7qCUIZrVpA_2016-03-24"
     },
-    "9": {
+    "6": {
         "annotation": {
             "attrs": {
                 "category": "Egy\u00e9b",
@@ -149,7 +103,7 @@
         },
         "id": "rPqbqbzXLh+deydYZwnuxw_2017-06-28"
     },
-    "10": {
+    "7": {
         "annotation": {
             "attrs": {
                 "category": "Egy\u00e9b",
@@ -164,7 +118,7 @@
         },
         "id": "rPqbqbzXLh+deydYZwnuxw_2017-06-28"
     },
-    "11": {
+    "8": {
         "annotation": {
             "attrs": {
                 "category": "Egy\u00e9b",
@@ -178,5 +132,334 @@
             "className": "Rect"
         },
         "id": "rPqbqbzXLh+deydYZwnuxw_2017-06-28"
+    },
+    "9": {
+        "annotation": {
+            "attrs": {
+                "height": 29,
+                "name": "shape",
+                "stroke": "#ff00ff",
+                "strokeWidth": 0.7664670658682635,
+                "width": 44,
+                "x": 109,
+                "y": 98
+            },
+            "className": "Rect"
+        },
+        "id": "test_2020-01-06"
+    },
+    "10": {
+        "annotation": {
+            "attrs": {
+                "height": 17,
+                "name": "shape",
+                "stroke": "#996633",
+                "strokeWidth": 0.7664670658682635,
+                "width": 58,
+                "x": 128,
+                "y": 47
+            },
+            "className": "Rect"
+        },
+        "id": "test_2020-01-06"
+    },
+    "11": {
+        "annotation": {
+            "attrs": {
+                "height": 11,
+                "name": "shape",
+                "stroke": "#996633",
+                "strokeWidth": 0.7664670658682635,
+                "width": 7,
+                "x": 70,
+                "y": 171
+            },
+            "className": "Rect"
+        },
+        "id": "test_2020-01-06"
+    },
+    "12": {
+        "annotation": {
+            "attrs": {
+                "height": 14,
+                "name": "shape",
+                "stroke": "#00ffff",
+                "strokeWidth": 0.7664670658682635,
+                "width": 15,
+                "x": 112,
+                "y": 110
+            },
+            "className": "Rect"
+        },
+        "id": "test_2020-01-06"
+    },
+    "13": {
+        "annotation": {
+            "attrs": {
+                "height": 24,
+                "name": "shape",
+                "stroke": "#00FF00",
+                "strokeWidth": 1.2427184466019425,
+                "width": 33,
+                "x": 127,
+                "y": 57
+            },
+            "className": "Rect"
+        },
+        "id": "test_2020-01-06"
+    },
+    "14": {
+        "annotation": {
+            "attrs": {
+                "height": 52,
+                "name": "shape",
+                "stroke": "#996633",
+                "strokeWidth": 0.7664670658682635,
+                "width": 47,
+                "x": 150,
+                "y": 199
+            },
+            "className": "Rect"
+        },
+        "id": "test_2020-01-06"
+    },
+    "15": {
+        "annotation": {
+            "attrs": {
+                "height": 7,
+                "name": "shape",
+                "stroke": "#996633",
+                "strokeWidth": 0.7664670658682635,
+                "width": 38,
+                "x": 157,
+                "y": 248
+            },
+            "className": "Rect"
+        },
+        "id": "test_2020-01-06"
+    },
+    "16": {
+        "annotation": {
+            "attrs": {
+                "height": 8,
+                "name": "shape",
+                "stroke": "#996633",
+                "strokeWidth": 0.7664670658682635,
+                "width": 11,
+                "x": 45,
+                "y": 135
+            },
+            "className": "Rect"
+        },
+        "id": "test_2020-01-06"
+    },
+    "17": {
+        "annotation": {
+            "attrs": {
+                "height": 14,
+                "name": "shape",
+                "stroke": "#996633",
+                "strokeWidth": 0.7664670658682635,
+                "width": 29,
+                "x": 107,
+                "y": 145
+            },
+            "className": "Rect"
+        },
+        "id": "test_2020-01-06"
+    },
+    "18": {
+        "annotation": {
+            "attrs": {
+                "height": 48,
+                "name": "shape",
+                "stroke": "#00ff00",
+                "strokeWidth": 0.7664670658682635,
+                "width": 57,
+                "x": 165,
+                "y": 68
+            },
+            "className": "Rect"
+        },
+        "id": "test_2020-01-06"
+    },
+    "19": {
+        "annotation": {
+            "attrs": {
+                "height": 22,
+                "name": "shape",
+                "stroke": "#996633",
+                "strokeWidth": 0.7664670658682635,
+                "width": 23,
+                "x": 48,
+                "y": 93
+            },
+            "className": "Rect"
+        },
+        "id": "test_2020-01-06"
+    },
+    "20": {
+        "annotation": {
+            "attrs": {
+                "height": 18.49019607843138,
+                "name": "shape",
+                "stroke": "#996633",
+                "strokeWidth": 0.7664670658682635,
+                "width": 34.052287581699375,
+                "x": 176.94771241830063,
+                "y": 177
+            },
+            "className": "Rect"
+        },
+        "id": "test_2020-01-06"
+    },
+    "21": {
+        "annotation": {
+            "attrs": {
+                "height": 14,
+                "name": "shape",
+                "stroke": "#996633",
+                "strokeWidth": 0.7664670658682635,
+                "width": 12,
+                "x": 53,
+                "y": 193
+            },
+            "className": "Rect"
+        },
+        "id": "test_2020-01-06"
+    },
+    "22": {
+        "annotation": {
+            "attrs": {
+                "height": 25,
+                "name": "shape",
+                "stroke": "#996633",
+                "strokeWidth": 0.7664670658682635,
+                "width": 28,
+                "x": 85,
+                "y": 188
+            },
+            "className": "Rect"
+        },
+        "id": "test_2020-01-06"
+    },
+    "23": {
+        "annotation": {
+            "attrs": {
+                "height": 10,
+                "name": "shape",
+                "stroke": "#996633",
+                "strokeWidth": 0.7664670658682635,
+                "width": 21,
+                "x": 119,
+                "y": 117
+            },
+            "className": "Rect"
+        },
+        "id": "test_2020-01-06"
+    },
+    "24": {
+        "annotation": {
+            "attrs": {
+                "height": 32.482014388489205,
+                "name": "shape",
+                "stroke": "#996633",
+                "strokeWidth": 0.7664670658682635,
+                "width": 15.985611510791372,
+                "x": 75,
+                "y": 146
+            },
+            "className": "Rect"
+        },
+        "id": "test_2020-01-06"
+    },
+    "25": {
+        "annotation": {
+            "attrs": {
+                "height": 21,
+                "name": "shape",
+                "stroke": "#0000ff",
+                "strokeWidth": 0.7664670658682635,
+                "width": 36,
+                "x": 65,
+                "y": 117
+            },
+            "className": "Rect"
+        },
+        "id": "test_2020-01-06"
+    },
+    "26": {
+        "annotation": {
+            "attrs": {
+                "height": 44.3636363636364,
+                "name": "shape",
+                "stroke": "#00ffff",
+                "strokeWidth": 0.7664670658682635,
+                "width": 54.84848484848487,
+                "x": 150,
+                "y": 126
+            },
+            "className": "Rect"
+        },
+        "id": "test_2020-01-06"
+    },
+    "27": {
+        "annotation": {
+            "attrs": {
+                "height": 8,
+                "name": "shape",
+                "stroke": "#ff00ff",
+                "strokeWidth": 0.7664670658682635,
+                "width": 7,
+                "x": 47,
+                "y": 85
+            },
+            "className": "Rect"
+        },
+        "id": "test_2020-01-06"
+    },
+    "28": {
+        "annotation": {
+            "attrs": {
+                "name": "shape",
+                "stroke": "#996633",
+                "strokeWidth": 0.7664670658682635,
+                "width": 2,
+                "x": 54,
+                "y": 93
+            },
+            "className": "Rect"
+        },
+        "id": "test_2020-01-06"
+    },
+    "29": {
+        "annotation": {
+            "attrs": {
+                "height": 11,
+                "name": "shape",
+                "stroke": "#ff0000",
+                "strokeWidth": 0.7664670658682635,
+                "width": 15,
+                "x": 31,
+                "y": 160
+            },
+            "className": "Rect"
+        },
+        "id": "test_2020-01-06"
+    },
+    "30": {
+        "annotation": {
+            "attrs": {
+                "height": 61,
+                "name": "shape",
+                "stroke": "#809dff",
+                "strokeWidth": 0.7664670658682635,
+                "width": 64,
+                "x": 93,
+                "y": 75
+            },
+            "className": "Rect"
+        },
+        "id": "test_2020-01-06"
     }
 }
