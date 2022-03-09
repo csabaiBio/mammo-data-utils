@@ -15,3 +15,10 @@ find . -name '*_raw.dcm'  | xargs -n1 -P8 -I{} bash -c 'f={}; dcmj2pnm $f | conv
 ```
 
 Finally we have a lot of PNGs decoded from the dicom files. :)
+
+### Steps
+
+1. Run `process_data_dir.py`
+2. Run `process_annotations.py`
+3. Run `create_coco.py`
+4. Run `visualize.py` # to visualize

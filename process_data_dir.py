@@ -15,7 +15,7 @@ for path in base.iterdir():
             data[_id_]['annotations'] = str(path)
             data[_id_]['images'] = []
             for image_path in Path(opj(base, _id_)).iterdir():
-                if image_path.is_file() and image_path.suffix == '.dcm':
+                if image_path.is_file() and image_path.suffix == '.dcm' and not image_path.stem.endswith('raw'):
                     data[_id_]['images'].append(str(image_path))
         except Exception as e:
             print(e)

@@ -38,7 +38,10 @@ class COCOJsonConverter:
         for record_id, values in self.annotation_data.items():
             for slice_id, annotations in values.items():
                 for annotation in annotations:
-                    category_names.add(annotation['category'])
+                    if annotation['category'] == 'Egyéb':
+                        continue
+                    else:
+                        category_names.add(annotation['category'])
 
         category_names = sorted(list(category_names))
 
@@ -79,6 +82,9 @@ class COCOJsonConverter:
         for record_id, values in self.annotation_data.items():
             for slice_id, annotations in values.items():
                 for annotation in annotations:
+                    if annotation['category'] == 'Egyéb':
+                        continue
+
                     bbox = [annotation['x'], annotation['y'], annotation['width'], annotation['height']]
                     anno = {
                         # (x0, y0),

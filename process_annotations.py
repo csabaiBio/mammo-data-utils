@@ -51,6 +51,7 @@ for _id_, record in data.items():
                             if len(image_path) == 0:
                                 image_path = record["images"]
 
+                            print(image_path)
                             assert len(image_path) == 1, 'Error, should match single image'
 
                             annotations[_id_][slice_id].append({
