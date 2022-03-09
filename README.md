@@ -18,6 +18,14 @@ Finally we have a lot of PNGs decoded from the dicom files. :)
 
 ### Steps
 
+Setup a virtual env:
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
 1. Run `process_data_dir.py`
 2. Run `process_annotations.py`
 3. Run `create_coco.py`
