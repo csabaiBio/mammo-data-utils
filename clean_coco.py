@@ -5,26 +5,27 @@ import pathlib
 from matplotlib import font_manager
 from PIL import Image, ImageDraw, ImageFont, ExifTags
 import numpy as np
-
-font = font_manager.FontProperties(family='sans-serif', weight='bold')
-file = font_manager.findfont(font)
-
-home = pathlib.Path.home()
+import copy
+from tqdm import tqdm
 
 with open('./coco_json/sote_mammo_emk.json', 'r') as f:
     datastore = json.load(f)
 
 id2cat = {_id : cat for cat, _id in datastore['cat2id'].items()}
 
-for _, img in enumerate(datastore['images']):
+cleaned_datastore = copy.deepcopy(datastore)
+cleaned_datastore['images'] = []
+cleaned_datastore['annotations'] = []
+
+for img in tqdm(datastore['images']):
     image_id = img['id']
 
     bboxes = []
+    annotations = []
     for ann in datastore['annotations']:
         if ann['image_id'] == image_id:
+            annotations.append(ann)
             bboxes.append((ann['bbox'], id2cat[ann['category_id']]))
-
-    from PIL import Image, ImageFont, ImageDraw, ImageEnhance
 
     try:
         image=Image.open(img['path'])
@@ -48,22 +49,22 @@ for _, img in enumerate(datastore['images']):
         # cases: image don't have exif
         pass
 
-    draw = ImageDraw.Draw(image)
-    fnt = ImageFont.truetype(file, 32, encoding="unic")
-
     height, width = image.size
 
-    for bbox, cat in bboxes:
-        draw.rectangle(((bbox[0], bbox[1]), (bbox[0] + bbox[2], bbox[1] + bbox[3])), outline=255, width=8)
-        draw.text((bbox[0], bbox[1]), cat, font=fnt, fill=(255), stroke_width=1)
+    valid_bbox_indices = []
 
+    for ind, (bbox, cat) in enumerate(bboxes):
         crop_mean = np.array(image.crop((bbox[0], bbox[1], bbox[0] + bbox[2], bbox[1] + bbox[3]))).mean()
 
         if crop_mean < 80:
-            print(crop_mean)
-            image.save('./validation_pictures/%s' % pathlib.Path(img['path'].split('/')[-1]).stem + f'_{int(crop_mean)}.png', "PNG")
-        else:
             pass
+        else:
+            valid_bbox_indices.append(ind)
 
-    del draw
+    cleaned_datastore["images"].append(img)
+    cleaned_datastore["annotations"].extend([annotations[_ind_] for _ind_ in valid_bbox_indices])
+    
     del image
+
+with open('./coco_json/cleaned_sote_mammo_emk.json', 'w') as fp:
+    json.dump(cleaned_datastore, fp, sort_keys=True, indent=4)

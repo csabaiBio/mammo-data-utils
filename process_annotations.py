@@ -10,13 +10,12 @@ for _id_, record in data.items():
     annotations[_id_] = {}
     with open(record['annotations'], 'r') as fp:
         records = json.load(fp)
-    from pprint import pprint
     if records is not None:
         ann = records.get('drawings', {})
         for rect in ann.get('children', []):
             if rect['attrs'].get('id') is None:
                 continue
-            slice_id = rect['attrs']['id'].replace('slice-', '').split('_')[0]
+            slice_id = rect['attrs']['id']
             annotations[_id_][slice_id] =  []
 
 error_ind = 0
@@ -34,8 +33,11 @@ for _id_, record in data.items():
         for rect in ann.get('children', []):
             if rect['attrs'].get('id') is None:
                 continue
-            slice_id = rect['attrs']['id'].replace('slice-', '').split('_')[0]
+            slice_id = rect['attrs']['id']
             for bbox in rect.get('children', []):
+                attrs = bbox.get('attrs', {})
+                if not attrs.get('visible', False):
+                    continue
                 for bbox in bbox.get('children', []):
                     if bbox['className'] == 'Rect':
                         try:
@@ -46,13 +48,20 @@ for _id_, record in data.items():
 
                             label = bbox['attrs']['category']
 
-                            image_path = list(filter(lambda x : x.split('_')[-1].replace('.dcm', '') == slice_id, record["images"]))
+                            image_path = list(filter(lambda value : str(slice_id) in value, record["images"]))
 
-                            if len(image_path) == 0:
-                                image_path = record["images"]
-
-                            print(image_path)
-                            assert len(image_path) == 1, 'Error, should match single image'
+                            if len(record["images"]) == 1 and len(image_path) == 0:
+                                print('Error, no match, single image')
+                                print(slice_id, _id_, image_path, record["images"])
+                                continue
+                            elif len(record["images"]) == 0:
+                                print('Error, no image')
+                                print(slice_id, _id_, image_path, record["images"])
+                                continue
+                            elif len(image_path) ==0 or len(image_path) > 1:
+                                print('full error')
+                                print(slice_id, _id_, image_path, record["images"])
+                                continue
 
                             annotations[_id_][slice_id].append({
                                 'x': x, 'y':y, 'width':width, 'height': height, 'category': label, 'image_path': image_path[0]

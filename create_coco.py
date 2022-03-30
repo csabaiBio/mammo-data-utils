@@ -74,7 +74,6 @@ class COCOJsonConverter:
                     "flickr_url": "",
                     "id": str(Path(img_path).stem)
                 }
-                print(image['id'])
                 self.images.append(image)
 
     def _build_annotations(self):

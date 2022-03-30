@@ -3,7 +3,7 @@ from os.path import join as opj
 import json
 
 
-base = Path('/tank/qbeer/mammo_annotations_v2')
+base = Path('/tank/qbeer/mammo_annotations_v3')
 
 data = {}
 
