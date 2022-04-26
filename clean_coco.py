@@ -17,6 +17,8 @@ cleaned_datastore = copy.deepcopy(datastore)
 cleaned_datastore['images'] = []
 cleaned_datastore['annotations'] = []
 
+errors = []
+
 for img in tqdm(datastore['images']):
     image_id = img['id']
 
@@ -66,5 +68,10 @@ for img in tqdm(datastore['images']):
     
     del image
 
+    errors.append(img["path"])
+
 with open('./coco_json/cleaned_sote_mammo_emk.json', 'w') as fp:
     json.dump(cleaned_datastore, fp, sort_keys=True, indent=4)
+
+with open('./coco_json/errors.json', 'w') as fp:
+    json.dump({"errors": errors}, fp, sort_keys=True, indent=4)

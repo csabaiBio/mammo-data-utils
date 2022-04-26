@@ -51,9 +51,7 @@ for _id_, record in data.items():
                             image_path = list(filter(lambda value : str(slice_id) in value, record["images"]))
 
                             if len(record["images"]) == 1 and len(image_path) == 0:
-                                print('Error, no match, single image')
-                                print(slice_id, _id_, image_path, record["images"])
-                                continue
+                                image_path = record["images"]
                             elif len(record["images"]) == 0:
                                 print('Error, no image')
                                 print(slice_id, _id_, image_path, record["images"])

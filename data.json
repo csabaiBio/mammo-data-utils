@@ -9798,6 +9798,10 @@
             "/tank/qbeer/mammo_annotations_v3/clRIkk2di2b4Hsb+uefYAg_2017-07-07/clRIkk2di2b4Hsb+uefYAg_2017-07-07_slice-0_frame-0.dcm"
         ]
     },
+    "cleaned_sote_mammo_emk": {
+        "annotations": "/tank/qbeer/mammo_annotations_v3/cleaned_sote_mammo_emk.json",
+        "images": []
+    },
     "cmIIOsFf6xz4nKeelbQkOQ_2016-08-12": {
         "annotations": "/tank/qbeer/mammo_annotations_v3/cmIIOsFf6xz4nKeelbQkOQ_2016-08-12.json",
         "images": [

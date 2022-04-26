@@ -5,18 +5,19 @@ import pathlib
 from matplotlib import font_manager
 from PIL import Image, ImageDraw, ImageFont, ExifTags
 import numpy as np
+from tqdm import tqdm
 
 font = font_manager.FontProperties(family='sans-serif', weight='bold')
 file = font_manager.findfont(font)
 
 home = pathlib.Path.home()
 
-with open('./coco_json/sote_mammo_emk.json', 'r') as f:
+with open('./coco_json/cleaned_sote_mammo_emk.json', 'r') as f:
     datastore = json.load(f)
 
 id2cat = {_id : cat for cat, _id in datastore['cat2id'].items()}
 
-for _, img in enumerate(datastore['images']):
+for img in tqdm(datastore['images']):
     image_id = img['id']
 
     bboxes = []
@@ -59,11 +60,7 @@ for _, img in enumerate(datastore['images']):
 
         crop_mean = np.array(image.crop((bbox[0], bbox[1], bbox[0] + bbox[2], bbox[1] + bbox[3]))).mean()
 
-        if crop_mean < 80:
-            print(crop_mean)
-            image.save('./validation_pictures/%s' % pathlib.Path(img['path'].split('/')[-1]).stem + f'_{int(crop_mean)}.png', "PNG")
-        else:
-            pass
+        image.save('./validation_pictures/%s' % pathlib.Path(img['path'].split('/')[-1]).stem + f'_{int(crop_mean)}.png', "PNG")
 
     del draw
     del image
