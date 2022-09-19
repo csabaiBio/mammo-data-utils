@@ -6,6 +6,7 @@ from matplotlib import font_manager
 from PIL import Image, ImageDraw, ImageFont, ExifTags
 import numpy as np
 import copy
+import shutil
 from tqdm import tqdm
 
 with open('./coco_json/sote_mammo_emk.json', 'r') as f:
@@ -16,6 +17,10 @@ id2cat = {_id : cat for cat, _id in datastore['cat2id'].items()}
 cleaned_datastore = copy.deepcopy(datastore)
 cleaned_datastore['images'] = []
 cleaned_datastore['annotations'] = []
+
+invalid_datastore = copy.deepcopy(datastore)
+invalid_datastore['images'] = []
+invalid_datastore['annotations'] = []
 
 errors = []
 
@@ -55,16 +60,25 @@ for img in tqdm(datastore['images']):
 
     valid_bbox_indices = []
 
+    invalid_bbox_indices = []
+
     for ind, (bbox, cat) in enumerate(bboxes):
         crop_mean = np.array(image.crop((bbox[0], bbox[1], bbox[0] + bbox[2], bbox[1] + bbox[3]))).mean()
 
         if crop_mean < 80:
-            pass
+            invalid_bbox_indices.append(ind)
         else:
             valid_bbox_indices.append(ind)
 
-    cleaned_datastore["images"].append(img)
-    cleaned_datastore["annotations"].extend([annotations[_ind_] for _ind_ in valid_bbox_indices])
+    if len(valid_bbox_indices) > 0:
+        cleaned_datastore["images"].append(img)
+        shutil.copy(img["path"], os.path.join("/home/qbeer/mammo_data_utils/valid/", os.path.basename(img["path"])))
+        cleaned_datastore["annotations"].extend([annotations[_ind_] for _ind_ in valid_bbox_indices])
+
+    if len(invalid_bbox_indices) > 0:
+        invalid_datastore["images"].append(img)
+        shutil.copy(img["path"], os.path.join("/home/qbeer/mammo_data_utils/invalid/", os.path.basename(img["path"])))
+        invalid_datastore["annotations"].extend([annotations[_ind_] for _ind_ in invalid_bbox_indices])
     
     del image
 
@@ -72,6 +86,9 @@ for img in tqdm(datastore['images']):
 
 with open('./coco_json/cleaned_sote_mammo_emk.json', 'w') as fp:
     json.dump(cleaned_datastore, fp, sort_keys=True, indent=4)
+
+with open('./coco_json/invalid_sote_mammo_emk.json', 'w') as fp:
+    json.dump(invalid_datastore, fp, sort_keys=True, indent=4)
 
 with open('./coco_json/errors.json', 'w') as fp:
     json.dump({"errors": errors}, fp, sort_keys=True, indent=4)

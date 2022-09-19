@@ -2,3 +2,5 @@ validation_pictures/*
 validation_pictures.zip
 
 venv/
+invalid/
+valid/
